@@ -39,7 +39,7 @@ module.exports.initialize = (callback) => {
     // check to see if the keypress itself is a valid message
     if (isValidMessage(key.name)) {
       callback(key.name);
-      //messageQueue.enqueue(key.name);
+      messageQueue.enqueue(key.name);
       return; // don't do any more processing on this key
     }
 

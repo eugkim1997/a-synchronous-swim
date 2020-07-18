@@ -12,7 +12,7 @@
       url: serverUrl,
       success: (command) => {SwimTeam.move(command)}
     });
-    setTimeout(commandFetcher, 2000);
+    setTimeout(commandFetcher, 5000);
   }
   commandFetcher();
 

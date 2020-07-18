@@ -23,6 +23,7 @@ module.exports.router = (req, res, next = ()=>{}) => {
       // var commands = ['up', 'down', 'right', 'left'];
       // var randomCommand = commands[Math.floor(Math.random() * 3)];
       res.writeHead(200, headers);
+
       res.end(messageQueue.dequeue());
     }
   }
